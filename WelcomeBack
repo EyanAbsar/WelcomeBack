@@ -1,0 +1,21 @@
+names = ["Jerry", "Bryce", "Michelle", "Cate", "Tanner", "Eyan"] #FOR LOOP - list of items in the loop
+for (x) in names: 
+	print(x) #prints the list once 
+students = 6 #WHILE LOOP - gives value to variable
+while students < 12: #condition that variable must meet in order to continue the loop
+	print(students) 
+	students += 1 #adds one to the variable and print each consecutive number
+programming = 100 #IF/ELSE CONDITIONAL - gives value to variable
+other_classes = 1 #gives value to variable 
+if programming > other_classes: #condition that variables must meet in order to print one thing, and if it isn't met, something else will run 
+	print ("Programming is the best!") #prints if value assigned to "programming" is greater than value with "other_classes"
+else:
+	print ("dont lie, programming is better")#prints if value assigned to "other_classes" is greater than value with "programming"
+def f(): #GLOBAL VARIABLE 
+	print z #variable isn't declared within this function, but it is used in this function
+z = "there are 6 students in my programming class" #global variable is defined outside the function
+f()
+def f(): #LOCAL VARIABLE
+	k = "this class is fun and interesting" #variable is defined within the function 
+	print k #variable is used in the function where it is declared
+f()
